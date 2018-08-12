@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import axios from 'axios'
 import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native'
 import {Content, Item, Input, Label} from 'native-base'
 

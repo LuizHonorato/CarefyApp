@@ -17,13 +17,13 @@ export const changePassword = (password) => {
     }
 }
 
-function loginUserSuccess(dispatch) {
-    return { type: 'LOGIN_USER_SUCCESS'}
+const loginUserSuccess = (dispatch) => {
+    dispatch ({ type: 'LOGIN_USER_SUCCESS'})
     NavigationService.navigate('Main')
 }
 
-function loginUserError(error, dispatch) {
-    return { type: 'LOGIN_USER_ERROR',  payload: error.message}
+const loginUserError = (error, dispatch) => {
+    dispatch ({ type: 'LOGIN_USER_ERROR',  payload: error.message})
 }
 
 export function login(email, password) {
